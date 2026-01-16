@@ -82,7 +82,7 @@
       }
     }
   ],
-  "url": "",
-  "manifest": "",
-  "download": ""
+  "url": "https://github.com/questionwho42-jpg/corvo-do-poco-foundry",
+  "manifest": "https://raw.githubusercontent.com/questionwho42-jpg/corvo-do-poco-foundry/main/module.json",
+  "download": "https://github.com/questionwho42-jpg/corvo-do-poco-foundry/archive/refs/heads/main.zip"
 }
