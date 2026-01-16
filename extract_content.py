@@ -7,36 +7,111 @@ OUTPUT_FILE = r"c:\Users\Pichau\Desktop\corvo do poço - modulo foundry\scripts\
 
 bundle = {"actors": [], "journals": []}
 
+# --- PF2e Monster Creation Rules (Simplified - Moderate Values) ---
+# Source: GM Core / Monster Creation
+PF2E_STATS = {
+    -1: {
+        "ac": 15,
+        "hp": 8,
+        "atk": 6,
+        "dmg": 2,
+        "save_high": 5,
+        "save_low": 2,
+        "per": 4,
+    },
+    0: {
+        "ac": 16,
+        "hp": 15,
+        "atk": 7,
+        "dmg": 3,
+        "save_high": 6,
+        "save_low": 3,
+        "per": 5,
+    },
+    1: {
+        "ac": 16,
+        "hp": 20,
+        "atk": 7,
+        "dmg": 4,
+        "save_high": 7,
+        "save_low": 4,
+        "per": 6,
+    },
+    2: {
+        "ac": 18,
+        "hp": 30,
+        "atk": 9,
+        "dmg": 6,
+        "save_high": 9,
+        "save_low": 5,
+        "per": 7,
+    },
+    3: {
+        "ac": 19,
+        "hp": 45,
+        "atk": 11,
+        "dmg": 8,
+        "save_high": 10,
+        "save_low": 6,
+        "per": 9,
+    },
+    4: {
+        "ac": 21,
+        "hp": 60,
+        "atk": 13,
+        "dmg": 10,
+        "save_high": 12,
+        "save_low": 8,
+        "per": 11,
+    },
+    5: {
+        "ac": 22,
+        "hp": 75,
+        "atk": 14,
+        "dmg": 12,
+        "save_high": 13,
+        "save_low": 9,
+        "per": 12,
+    },
+    6: {
+        "ac": 24,
+        "hp": 95,
+        "atk": 16,
+        "dmg": 15,
+        "save_high": 15,
+        "save_low": 11,
+        "per": 14,
+    },
+    7: {
+        "ac": 25,
+        "hp": 115,
+        "atk": 18,
+        "dmg": 17,
+        "save_high": 16,
+        "save_low": 12,
+        "per": 15,
+    },
+    8: {
+        "ac": 27,
+        "hp": 135,
+        "atk": 19,
+        "dmg": 20,
+        "save_high": 18,
+        "save_low": 13,
+        "per": 16,
+    },
+    10: {
+        "ac": 30,
+        "hp": 175,
+        "atk": 23,
+        "dmg": 25,
+        "save_high": 21,
+        "save_low": 16,
+        "per": 20,
+    },
+}
 
-def parse_key_value(text):
-    data = {}
-    lines = text.split("\n")
-    current_key = None
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
-
-        # Match "- **Key:** Value"
-        m = re.match(r"- \*\*(.+?):\*\*\s*(.*)", line)
-        if m:
-            key = m.group(1).lower()
-            val = m.group(2)
-            data[key] = val
-            current_key = key
-        elif current_key and line.startswith("- "):
-            # sub-list items, append to current key if it's stats or similar
-            if isinstance(data[current_key], list):
-                data[current_key].append(line[2:])
-            elif isinstance(data[current_key], str):
-                # convert to list if multiple items found or just append text?
-                # For now, simplistic approach: append text
-                data[current_key] += " " + line
-        else:
-            # Continuation of text
-            if current_key and isinstance(data[current_key], str):
-                data[current_key] += "\n" + line
-    return data
+MONSTER_LEVEL_MAP = {}  # name -> level
 
 
 def read_file_safe(filepath):
@@ -51,103 +126,424 @@ def read_file_safe(filepath):
     return ""
 
 
+def load_monster_levels():
+    """Parses bestiary markdown tables to map monster names to levels."""
+    bestiary_dir = os.path.join(ROOT_DIR, "bestiario")
+    if not os.path.exists(bestiary_dir):
+        return
+
+    for root, _, files in os.walk(bestiary_dir):
+        for file in files:
+            if not file.endswith(".md"):
+                continue
+            content = read_file_safe(os.path.join(root, file))
+
+            # Find markdown tables
+            # | ... | Inimigo | Nível ... |
+            lines = content.split("\n")
+            for line in lines:
+                if "|" in line and "**" in line:
+                    # simplistic parse for | d12 | **Name** | Level |
+                    # Try to extract bolded name and valid number
+                    parts = line.split("|")
+                    if len(parts) < 4:
+                        continue
+
+                    name_match = re.search(r"\*\*(.+?)\*\*", line)
+                    if not name_match:
+                        continue
+                    name = name_match.group(1).strip()
+
+                    # Try to find level in other columns
+                    level = 0
+                    for part in parts:
+                        part = part.strip()
+                        if part.isdigit() or (
+                            part.startswith("-") and part[1:].isdigit()
+                        ):
+                            level = int(part)
+                            break
+
+                    MONSTER_LEVEL_MAP[name] = level
+                    # normalize name variations (lowercase)
+                    MONSTER_LEVEL_MAP[name.lower()] = level
+
+
+def generate_pf2e_stats(name, level=0, generated=False):
+    """Generates PF2e stats dictionary based on level."""
+    stats = PF2E_STATS.get(level, PF2E_STATS[0])
+
+    system = {
+        "details": {
+            "level": {"value": level},
+            "publication": {"title": "Corvo do Poço", "authors": "Antigravity"},
+        },
+        "attributes": {
+            "hp": {"value": stats["hp"], "max": stats["hp"], "temp": 0},
+            "ac": {"value": stats["ac"]},
+            "perception": {"value": stats["per"]},
+            "speed": {"value": 25, "label": "25 feet"},
+        },
+        "saves": {
+            "fortitude": {"value": stats["save_high"]},
+            "reflex": {"value": stats["save_low"]},
+            "will": {"value": stats["save_low"]},
+        },
+        "traits": {"size": {"value": "med"}, "rarity": "common"},
+    }
+
+    items = []
+
+    # Generic Strike
+    if generated:
+        items.append(
+            {
+                "name": "Ataque Básico",
+                "type": "melee",
+                "system": {
+                    "damageRolls": {
+                        "0": {
+                            "damage": f"1d6 + {stats['dmg']}",
+                            "damageType": "bludgeoning",
+                        }
+                    },
+                    "bonus": {"value": stats["atk"]},
+                    "weaponType": {"value": "simple"},
+                    "group": "brawling",
+                },
+            }
+        )
+
+    return system, items
+
+
+def parse_social_stats(text):
+    """Parses NPC social stats format."""
+    stats = {"per": 0, "will": 0, "skills": []}
+
+    # Percepção: +X
+    m_per = re.search(r"Percepção:?\s*\+(\d+)", text)
+    if m_per:
+        stats["per"] = int(m_per.group(1))
+
+    # Vontade: +X
+    m_will = re.search(r"Vontade:?\s*\+(\d+)", text)
+    if m_will:
+        stats["will"] = int(m_will.group(1))
+
+    # Perícias: **Skill** +X, ...
+    m_skills = re.search(r"Perícias:?\s*(.+)", text)
+    if m_skills:
+        skill_line = m_skills.group(1)
+        # Parse comma separated "**Name** +X"
+        for part in skill_line.split(","):
+            s_match = re.search(r"\*\*(.+?)\*\*\s*\+(\d+)", part)
+            if s_match:
+                stats["skills"].append(
+                    {"name": s_match.group(1), "mod": int(s_match.group(2))}
+                )
+            else:
+                # Try unbolded
+                s_match2 = re.search(r"([a-zA-Zçã\s]+)\s*\+(\d+)", part)
+                if s_match2:
+                    stats["skills"].append(
+                        {
+                            "name": s_match2.group(1).strip(),
+                            "mod": int(s_match2.group(2)),
+                        }
+                    )
+
+    return stats
+
+
+def parse_full_stat_block_md(text):
+    """Parses explicit stat block from markdown blockquotes."""
+    # Look for > **CA:** 19; **Fort** +6
+    lines = text.split("\n")
+
+    extracted = {
+        "ac": None,
+        "hp": None,
+        "saves": {},
+        "attribs": {},
+        "skills": [],
+        "strikes": [],
+    }
+
+    for line in lines:
+        line = line.replace(">", "").strip()
+
+        # AC & Saves
+        # **CA:** 19; **Fort** +6, **Ref** +10, **Vont** +8
+        if "**CA:**" in line or "**AC:**" in line:
+            m_ac = re.search(r"\*\*(?:CA|AC):\*\*\s*(\d+)", line)
+            if m_ac:
+                extracted["ac"] = int(m_ac.group(1))
+
+            for save in ["Fort", "Ref", "Will", "Vont"]:
+                m_save = re.search(rf"\*\*{save}\*\*.*?\+(\d+)", line)
+                if m_save:
+                    key = "will" if save in ["Will", "Vont"] else save.lower()
+                    extracted["saves"][key] = int(m_save.group(1))
+
+        # HP
+        # **PV:** 45; **Fraquezas:** Prata 5
+        if "**PV:**" in line or "**HP:**" in line:
+            m_hp = re.search(r"\*\*(?:PV|HP):\*\*\s*(\d+)", line)
+            if m_hp:
+                extracted["hp"] = int(m_hp.group(1))
+
+        # Attributes
+        # **Atributos:** For +2, Des +4, Con +2, Int +0, Sab +2, Car +1
+        if "**Atributos:**" in line or "**Attributes:**" in line:
+            # Simple parse
+            mapping = {
+                "For": "str",
+                "Des": "dex",
+                "Con": "con",
+                "Int": "int",
+                "Sab": "wis",
+                "Car": "cha",
+            }
+            for pt, eng in mapping.items():
+                m_attr = re.search(rf"{pt}\s*([+-]\d+)", line)
+                if m_attr:
+                    extracted["attribs"][eng] = int(m_attr.group(1))
+
+        # Strikes / Attacks
+        # **Corpo a corpo** ♦ **Espada Curta** +10 ... **Dano** 1d6+4 perfurante
+        if "**Corpo a corpo**" in line or "**Melee**" in line:
+            # Clean prefix to avoid matching the type header
+            clean_line = (
+                line.replace("**Corpo a corpo**", "")
+                .replace("**Melee**", "")
+                .replace("♦", "")
+            )
+
+            # Regex: **Name** (optional text) +Number ... **Dano** Damage
+            m_atk = re.search(
+                r"\*\*([^\*]+)\*\*[^\+]*\+(\d+).*?\*\*Dano\*\*\s*(.+)", clean_line
+            )
+            if m_atk:
+                name = m_atk.group(1).strip()
+                bonus = int(m_atk.group(2))
+                dmg_str = m_atk.group(3).strip()
+                extracted["strikes"].append(
+                    {"name": name, "type": "melee", "bonus": bonus, "damage": dmg_str}
+                )
+
+    return extracted
+
+
+def populate_actor_from_extracted(extracted_stats, base_system):
+    """Updates base_system with extracted explicit stats."""
+    if extracted_stats["ac"]:
+        base_system["attributes"]["ac"]["value"] = extracted_stats["ac"]
+    if extracted_stats["hp"]:
+        base_system["attributes"]["hp"] = {
+            "value": extracted_stats["hp"],
+            "max": extracted_stats["hp"],
+        }
+
+    for save, val in extracted_stats["saves"].items():
+        base_system["saves"][save] = {"value": val}
+
+    for attr, val in extracted_stats["attribs"].items():
+        base_system["abilities"] = base_system.get("abilities", {})
+        base_system["abilities"][attr] = {"mod": val}
+
+    items = []
+    for strike in extracted_stats["strikes"]:
+        # Naive strict parsing
+        dmg_parts = strike["damage"].split(" ")
+        dice = dmg_parts[0] if len(dmg_parts) > 0 else "1d4"
+        dtype = dmg_parts[1] if len(dmg_parts) > 1 else "bludgeoning"
+
+        items.append(
+            {
+                "name": strike["name"],
+                "type": "melee",
+                "system": {
+                    "damageRolls": {"0": {"damage": dice, "damageType": dtype}},
+                    "bonus": {"value": strike["bonus"]},
+                    "weaponType": {"value": "simple"},
+                    "group": "sword",  # generic
+                },
+            }
+        )
+    return base_system, items
+
+
 def parse_actors(filepath, category):
     content = read_file_safe(filepath)
     if not content:
         return
 
-    # Split by ### headers
-    entries = re.split(r"^###\s+", content, flags=re.MULTILINE)[1:]  # skip preamble
+    # Regex for Actors header
+    entries = re.split(r"^###\s+", content, flags=re.MULTILINE)[1:]
 
     for entry in entries:
         lines = entry.split("\n")
         header = lines[0].strip()
         body = "\n".join(lines[1:])
 
-        header = re.sub(r"^\d+\.\s*", "", header)
-        name = header.split("(")[0].strip()
+        # Clean Header: "1. Prefeito Thaddeus (Humano, 62 anos)"
+        header_clean = re.sub(r"^\d+\.\s*", "", header)
+        name = header_clean.split("(")[0].strip()
 
-        metadata = parse_key_value(body)
+        # Extract Lore/Bio
+        metadata = {}
+        lore_html = ""
+        prompt = ""
 
-        actor_type = "npc"
+        # Simple extraction
+        for line in lines:
+            if line.startswith("- **"):
+                parts = line.split(":**", 1)
+                if len(parts) > 1:
+                    key = parts[0].replace("- **", "").lower().strip()
+                    val = parts[1].strip()
+                    metadata[key] = val
+                    if "prompt" in key:
+                        prompt = val.replace("`", "")
+                    elif key not in [
+                        "estatísticas sociais (pf2e)",
+                        "influência",
+                        "mecânica",
+                        "lore",
+                    ]:
+                        # Capture only non-lore keys as extra info, lore is handled below or via body
+                        lore_html += f"<p><strong>{key.title()}:</strong> {val}</p>"
+            elif "**Lore:**" in line:  # Fix for "Lore" often being inline
+                # - **Lore:** xyz
+                pass
 
-        bio = ""
-        for k, v in metadata.items():
-            if k not in [
-                "prompt",
-                "mecânica",
-                "estatísticas sociais (pf2e)",
-                "influência",
-            ]:
-                bio += f"<p><strong>{k.title()}:</strong> {v}</p>"
+        # Additional Bio extraction: just raw text that isn't key-value
+        # This is a bit weak but covers most cases
 
-        prompt = None
-        for k in metadata:
-            if "prompt" in k:
-                prompt = metadata[k].replace("`", "").strip()
-                break
+        # Determine if we have social stats or full block
+        is_social = "Estatísticas Sociais (PF2e)" in body
+
+        # Try to find level from map if not explicit
+        level = MONSTER_LEVEL_MAP.get(
+            name, MONSTER_LEVEL_MAP.get(name.lower(), 1)
+        )  # Default 1 to avoid 0 weakness
+
+        # Base System (Generated)
+        system, items = generate_pf2e_stats(name, level, generated=True)
+
+        # 1. Social Stats Override
+        if is_social:
+            social = parse_social_stats(body)
+            if social["per"]:
+                system["attributes"]["perception"]["value"] = social["per"]
+            if social["will"]:
+                system["saves"]["will"]["value"] = social["will"]
+            # Skills would need item mapping, simpler to put in flags or raw data for now,
+            # or just rely on generic stats. Sticking to generic for simplicity unless explicit.
+
+        # 2. Add Lore (Include the raw body or structured lore)
+        # For simplicity, we just dump the cleaned up body as bio
+        bio_text = re.sub(
+            r"- \*\*.+?:\*\* .+\n", "", body
+        )  # Remove keys to avoid duplication? No, keep it.
+        # Use our extracted KV HTML
+        full_bio = lore_html
+        if "lore" in metadata:
+            full_bio = f"<p><strong>Lore:</strong> {metadata['lore']}</p>" + full_bio
+
+        system["details"]["biography"] = {"value": full_bio, "public": full_bio}
 
         actor = {
             "name": name,
-            "type": actor_type,
+            "type": "npc",
             "folder": category.title(),
-            "biography": bio,
             "img_prompt": prompt,
-            "system": {},
+            "system": system,
+            "items": items,
         }
         bundle["actors"].append(actor)
 
 
-def parse_journals(filepath, category):
+def parse_mission_bosses(filepath, category):
+    """Special parser for mission files to find bosses with statblocks."""
     content = read_file_safe(filepath)
     if not content:
         return
 
+    # Check for "Ficha Oficial" or embedded stat block
+    if "### 👹 Ficha da Ameaça" in content:
+        # Extract Name
+        # ## Ameaça Principal: O Rei dos Ratos (Wererat)
+        m_name = re.search(r"## Ameaça.*?: (.+?)(?:\(|$)", content)
+        name = m_name.group(1).strip() if m_name else "Unknown Boss"
+
+        # Parse logic
+        block_text = ""
+        capture = False
+        for line in content.split("\n"):
+            if "> **CA:**" in line or "> **AC:**" in line:
+                capture = True
+            if capture and line.strip().startswith(">"):
+                block_text += line + "\n"
+
+        if block_text:
+            extracted = parse_full_stat_block_md(block_text)
+            # Level?
+            m_lvl = re.search(r"\*\*Nível:\*\*\s*(\d+)", content)
+            level = int(m_lvl.group(1)) if m_lvl else 3
+
+            system, items = generate_pf2e_stats(name, level, generated=False)
+            system, explicit_items = populate_actor_from_extracted(extracted, system)
+
+            # Add items
+            actor = {
+                "name": name,
+                "type": "npc",
+                "folder": "Bosses",
+                "img_prompt": "",  # Might be missing here
+                "system": system,
+                "items": explicit_items,
+            }
+            bundle["actors"].append(actor)
+
+
+def parse_journals_simple(filepath, category):
+    # Reuse old logic slightly simplified
+    content = read_file_safe(filepath)
+    if not content:
+        return
     filename = os.path.basename(filepath)
-    name = filename.replace(".md", "").replace("_", " ").replace("-", " ").title()
-
-    html_content = content
-    html_content = re.sub(
-        r"^##\s+(.+)$", r"<h2>\1</h2>", html_content, flags=re.MULTILINE
-    )
-    html_content = re.sub(
-        r"^###\s+(.+)$", r"<h3>\1</h3>", html_content, flags=re.MULTILINE
-    )
-    html_content = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", html_content)
-    html_content = html_content.replace("\n", "<br>")
-
-    journal = {"name": name, "folder": category.title(), "content": html_content}
-    bundle["journals"].append(journal)
+    name = filename.replace(".md", "").replace("_", " ").title()
+    bundle["journals"].append({"name": name, "folder": category, "content": content})
 
 
 def main():
-    # Ensure output dir
-    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
+    load_monster_levels()
 
-    # Walk directories
-    for root, dirs, files in os.walk(ROOT_DIR):
+    # 1. Bestiary & Populacao (Actors)
+    for root, _, files in os.walk(ROOT_DIR):
         for file in files:
-            if not file.endswith(".md") or file.startswith("GUIA"):
-                continue
-
             path = os.path.join(root, file)
-            rel_path = os.path.relpath(path, ROOT_DIR)
+            if "bestiario" in root and file.endswith(".md"):
+                parse_actors(path, "Bestiario")
+            elif "populacao" in root and file.endswith(".md"):
+                parse_actors(path, "Populacao")
+            elif "missoes" in root and file.endswith(".md"):
+                # Check for bosses
+                parse_mission_bosses(path, "Missoes")
 
-            if "bestiario" in rel_path or "populacao" in rel_path:
-                category = "Bestiario" if "bestiario" in rel_path else "Populacao"
-                print(f"Parsing Actor: {rel_path}")
-                parse_actors(path, category)
-            elif "lore" in rel_path or "missoes" in rel_path:
-                category = "Lore" if "lore" in rel_path else "Missoes"
-                print(f"Parsing Journal: {rel_path}")
-                parse_journals(path, category)
+            # Lore Journals
+            elif "lore" in root and file.endswith(".md"):
+                parse_journals_simple(path, "Lore")
 
-    print(f"Total Actors: {len(bundle['actors'])}")
-    print(f"Total Journals: {len(bundle['journals'])}")
-
+    # Output
+    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(bundle, f, indent=2, ensure_ascii=False)
-    print("Bundle created.")
+    print(
+        f"Extracted {len(bundle['actors'])} actors and {len(bundle['journals'])} journals."
+    )
 
 
 if __name__ == "__main__":
