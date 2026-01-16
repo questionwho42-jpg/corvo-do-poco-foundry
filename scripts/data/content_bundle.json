@@ -68,10 +68,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -144,10 +147,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -220,10 +226,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -296,10 +305,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -372,10 +384,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -448,10 +463,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -524,10 +542,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -600,10 +621,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -676,10 +700,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -752,10 +779,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -828,10 +858,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -904,10 +937,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -972,19 +1008,19 @@
           "name": "Battle Axe",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 11
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8+8 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 11
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -994,19 +1030,19 @@
           "name": "Composite Shortbow",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1074,19 +1110,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6-1 cortante, 1d4 espírito",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1154,19 +1190,19 @@
           "name": "Dogslicer",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 7
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 7
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1176,19 +1212,19 @@
           "name": "Shortbow",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 7
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 7
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1256,19 +1292,19 @@
           "name": "Mordida",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8 perfurante, 1d6 veneno",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1336,19 +1372,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+5 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1416,19 +1452,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+5 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1553,19 +1589,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+3 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1575,19 +1611,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+3 cortante, 1d4 sangramento",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1655,19 +1691,19 @@
           "name": "Ferrão",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 12
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d12+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 12
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1793,19 +1829,19 @@
           "name": "Espada Longa",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8+4 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1815,19 +1851,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+4 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1837,19 +1873,19 @@
           "name": "Lança",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1917,19 +1953,19 @@
           "name": "Espada Curta",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 8
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+2 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 8
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -1939,19 +1975,19 @@
           "name": "Lança",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+2 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2019,19 +2055,19 @@
           "name": "Face do Cubo",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 11
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6 ácido",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 11
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2099,19 +2135,19 @@
           "name": "Espada Curta",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2121,19 +2157,19 @@
           "name": "Besta de Mão",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2201,19 +2237,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 11
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d10+8 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 11
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2223,19 +2259,19 @@
           "name": "Vômito Digestivo (Digestive Spew)",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 7
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6 ácido, 1d6 ácido",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 7
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2303,19 +2339,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8+4 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2325,19 +2361,19 @@
           "name": "Ferrão",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2405,19 +2441,19 @@
           "name": "Cajado",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 7
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4+2 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 7
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2485,19 +2521,19 @@
           "name": "Mandibles",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 6
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4-1 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 6
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2565,19 +2601,19 @@
           "name": "Mandibles",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8+4 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2587,19 +2623,19 @@
           "name": "Ferrão",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2667,19 +2703,19 @@
           "name": "Bastard Sword",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2689,19 +2725,19 @@
           "name": "Punho",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4+4 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2711,19 +2747,19 @@
           "name": "Javelin",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 8
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 8
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2791,19 +2827,19 @@
           "name": "Shortsword",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 8
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6-3 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 8
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2813,19 +2849,19 @@
           "name": "Shortbow",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 8
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 8
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -2950,19 +2986,19 @@
           "name": "Branch",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 12
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d12+2 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 12
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3030,19 +3066,19 @@
           "name": "Greataxe",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 11
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d10+6 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 11
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3052,19 +3088,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 11
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+6 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 11
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3074,19 +3110,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 11
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4+6 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 11
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3096,19 +3132,19 @@
           "name": "Javelin",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 8
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 8
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3176,19 +3212,19 @@
           "name": "Baton",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3198,19 +3234,19 @@
           "name": "Dagger",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3220,19 +3256,19 @@
           "name": "Dagger",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3300,19 +3336,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6-1 cortante, 1d4 espírito",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3380,19 +3416,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+3 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3402,19 +3438,19 @@
           "name": "Unha",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 9
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+3 cortante, 1d4 sangramento",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 9
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3482,19 +3518,19 @@
           "name": "Shortsword",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3504,19 +3540,19 @@
           "name": "Hand Crossbow",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3584,19 +3620,19 @@
           "name": "Arm",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 11
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+3 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 11
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3664,19 +3700,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 12
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4+6 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 12
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3686,19 +3722,19 @@
           "name": "Dagger",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 12
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4+6 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 12
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3708,19 +3744,19 @@
           "name": "Dagger",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 10
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4+6 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 10
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3788,19 +3824,19 @@
           "name": "Tentacles",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 7
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8+1 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 7
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3925,19 +3961,19 @@
           "name": "Mandibles",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 8
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d10+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 8
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -3947,19 +3983,19 @@
           "name": "Cauda",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 8
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4+2 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 8
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4027,19 +4063,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 8
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+1 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 8
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4107,19 +4143,19 @@
           "name": "Spear",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 3
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+1 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 3
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4129,19 +4165,19 @@
           "name": "Spear",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 5
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+1 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 5
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4151,19 +4187,19 @@
           "name": "Sling",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 5
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 5
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4460,19 +4496,19 @@
           "name": "Pseudópode",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+4 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4540,19 +4576,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 13
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+7 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 13
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4678,19 +4714,19 @@
           "name": "Greataxe",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d12+8 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4700,19 +4736,19 @@
           "name": "Chifre",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8+8 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4780,19 +4816,19 @@
           "name": "Bico",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4802,19 +4838,19 @@
           "name": "Unha",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4824,19 +4860,19 @@
           "name": "Asa",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+4 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4904,19 +4940,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 13
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+3 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 13
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -4926,19 +4962,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 13
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+3 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 13
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5006,19 +5042,19 @@
           "name": "Punho",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 16
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+8 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 16
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5086,19 +5122,19 @@
           "name": "Unha",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 15
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+4 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 15
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5108,19 +5144,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 15
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+4 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 15
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5188,19 +5224,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d10+5 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5210,19 +5246,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+5 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5348,19 +5384,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+5 perfurante, 1d4 sangramento",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5370,19 +5406,19 @@
           "name": "Cuspe (Spittle)",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "4d6 ácido",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5450,19 +5486,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d10+7 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5472,19 +5508,19 @@
           "name": "Cauda",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+7 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5552,19 +5588,19 @@
           "name": "Mandibles",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 6
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4-1 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 6
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5632,19 +5668,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d10+7 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5654,19 +5690,19 @@
           "name": "Cauda",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 14
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+7 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 14
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5734,19 +5770,19 @@
           "name": "Telekinetic Object",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 13
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d12 sem tipo",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 13
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -5928,19 +5964,19 @@
           "name": "Presas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 16
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+7 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 16
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6008,19 +6044,19 @@
           "name": "Punho",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 16
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d10+7 contundente mais Podridão da Múmia",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 16
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6088,19 +6124,19 @@
           "name": "Glaive",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 17
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8+10 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 17
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6110,19 +6146,19 @@
           "name": "Arco Curto Composto",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 15
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+8 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 15
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6190,19 +6226,19 @@
           "name": "Halberd",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 18
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d10+9 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 18
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6212,19 +6248,19 @@
           "name": "Punho",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 16
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d8+9 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 16
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6292,19 +6328,19 @@
           "name": "Presas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 16
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+7 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 16
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6372,19 +6408,19 @@
           "name": "Shortsword",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 18
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+8 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 18
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6394,19 +6430,19 @@
           "name": "Snake Fangs",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 16
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d4+8 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 16
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6416,19 +6452,19 @@
           "name": "Composite Shortbow",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 19
-            },
             "damageRolls": {
               "0": {
                 "damage": "1d6+7 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 19
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6496,19 +6532,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 20
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+6 perfurante, 2d6 ácido",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 20
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6518,19 +6554,19 @@
           "name": "Cuspe Ácido (Acid Spit)",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 17
-            },
             "damageRolls": {
               "0": {
                 "damage": "5d6 ácido",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 17
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6598,19 +6634,19 @@
           "name": "Mandíbulas de Dragão",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 20
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+9 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 20
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6620,19 +6656,19 @@
           "name": "Mandíbulas de Leão",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 20
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d10+9 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 20
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6642,19 +6678,19 @@
           "name": "Chifres de Cabra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 20
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d10+9 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 20
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6664,19 +6700,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 20
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+9 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 20
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6744,19 +6780,19 @@
           "name": "Branch",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 19
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d12+7 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 19
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6766,19 +6802,19 @@
           "name": "Root",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 19
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+7 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 19
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6788,19 +6824,19 @@
           "name": "Rock",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 19
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d10+7 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 19
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6868,19 +6904,19 @@
           "name": "Greatclub",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 21
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d10+12 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 21
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6890,19 +6926,19 @@
           "name": "Punho",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 20
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+14 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 20
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6912,19 +6948,19 @@
           "name": "Rock",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 18
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+12 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 18
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -6992,19 +7028,19 @@
           "name": "Warhammer",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 20
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+11 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 20
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7014,19 +7050,19 @@
           "name": "Punho",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 17
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+9 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 17
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7151,19 +7187,19 @@
           "name": "Binding Contract",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 23
-            },
             "damageRolls": {
               "0": {
                 "damage": "3d6+11 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 23
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7173,19 +7209,19 @@
           "name": "Chifre",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 21
-            },
             "damageRolls": {
               "0": {
                 "damage": "3d10+11 perfurante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 21
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7253,19 +7289,19 @@
           "name": "Frost Greatsword",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 24
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d12+10 cortante, 1d6 frio",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 24
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7275,19 +7311,19 @@
           "name": "Frost Fist",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 24
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d6+10 contundente, 1d6 frio",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 24
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7297,19 +7333,19 @@
           "name": "Frost Composite Longbow",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 21
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d8+6 perfurante, 1d6 frio",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 21
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7377,19 +7413,19 @@
           "name": "Mão",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 24
-            },
             "damageRolls": {
               "0": {
                 "damage": "4d8 vazio",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 24
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7457,19 +7493,19 @@
           "name": "Spiked Chain",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 27
-            },
             "damageRolls": {
               "0": {
                 "damage": "3d8+18 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 27
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7479,19 +7515,19 @@
           "name": "Punho",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 26
-            },
             "damageRolls": {
               "0": {
                 "damage": "3d8+18 contundente",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 26
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7559,19 +7595,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 29
-            },
             "damageRolls": {
               "0": {
                 "damage": "3d12+15 perfurante, 2d6 fogo",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 29
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7581,19 +7617,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 29
-            },
             "damageRolls": {
               "0": {
                 "damage": "3d10+15 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 29
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7603,19 +7639,19 @@
           "name": "Cauda",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 27
-            },
             "damageRolls": {
               "0": {
                 "damage": "3d12+13 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 27
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7625,19 +7661,19 @@
           "name": "Asa",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 27
-            },
             "damageRolls": {
               "0": {
                 "damage": "2d10+13 cortante",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 27
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7705,19 +7741,19 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 33
-            },
             "damageRolls": {
               "0": {
                 "damage": "3d10+12 perfurante, 2d6 frio",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 33
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7727,19 +7763,19 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 33
-            },
             "damageRolls": {
               "0": {
                 "damage": "3d8+12 cortante, 2d6 frio",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 33
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7807,19 +7843,19 @@
           "name": "Hand",
           "type": "melee",
           "system": {
-            "bonus": {
-              "value": 32
-            },
             "damageRolls": {
               "0": {
                 "damage": "4d10+14 vazio",
                 "damageType": "untyped"
               }
             },
-            "weaponType": {
-              "value": "melee"
+            "bonus": {
+              "value": 32
             },
             "traits": {
+              "value": []
+            },
+            "attackEffects": {
               "value": []
             },
             "rules": []
@@ -7895,10 +7931,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -7971,10 +8010,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8047,10 +8089,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8123,10 +8168,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8199,10 +8247,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8275,10 +8326,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8351,10 +8405,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8427,10 +8484,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8503,10 +8563,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8579,10 +8642,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8655,10 +8721,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8731,10 +8800,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8807,10 +8879,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8883,10 +8958,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -8959,10 +9037,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9035,10 +9116,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9111,10 +9195,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9187,10 +9274,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9263,10 +9353,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9339,10 +9432,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9415,10 +9511,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9491,10 +9590,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9567,10 +9669,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9643,10 +9748,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9719,10 +9827,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9795,10 +9906,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9871,10 +9985,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -9947,10 +10064,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10023,10 +10143,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10099,10 +10222,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10175,10 +10301,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10251,10 +10380,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10327,10 +10459,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10403,10 +10538,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10479,10 +10617,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10555,10 +10696,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10631,10 +10775,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10707,10 +10854,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10783,10 +10933,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10859,10 +11012,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -10935,10 +11091,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11011,10 +11170,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11087,10 +11249,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11163,10 +11328,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11239,10 +11407,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11315,10 +11486,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11391,10 +11565,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11467,10 +11644,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11543,10 +11723,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11619,10 +11802,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11695,10 +11881,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11771,10 +11960,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11847,10 +12039,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11923,10 +12118,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -11999,10 +12197,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12075,10 +12276,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12151,10 +12355,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12227,10 +12434,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12303,10 +12513,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12379,10 +12592,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12455,10 +12671,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12531,10 +12750,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12607,10 +12829,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12683,10 +12908,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12759,10 +12987,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12835,10 +13066,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12911,10 +13145,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -12987,10 +13224,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13063,10 +13303,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13139,10 +13382,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13215,10 +13461,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13291,10 +13540,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13367,10 +13619,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13443,10 +13698,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13519,10 +13777,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13595,10 +13856,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13671,10 +13935,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13747,10 +14014,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13823,10 +14093,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13899,10 +14172,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -13975,10 +14251,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14051,10 +14330,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14127,10 +14409,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14203,10 +14488,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14279,10 +14567,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14355,10 +14646,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14431,10 +14725,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14507,10 +14804,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14583,10 +14883,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14659,10 +14962,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14735,10 +15041,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14811,10 +15120,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14887,10 +15199,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -14963,10 +15278,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15039,10 +15357,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15115,10 +15436,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15191,10 +15515,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15267,10 +15594,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15343,10 +15673,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15419,10 +15752,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15495,10 +15831,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15571,10 +15910,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15647,10 +15989,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15723,10 +16068,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15799,10 +16147,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15875,10 +16226,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -15951,10 +16305,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16027,10 +16384,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16103,10 +16463,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16179,10 +16542,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16255,10 +16621,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16331,10 +16700,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16407,10 +16779,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16483,10 +16858,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16559,10 +16937,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16635,10 +17016,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16711,10 +17095,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16787,10 +17174,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16863,10 +17253,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -16939,10 +17332,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17015,10 +17411,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17091,10 +17490,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17167,10 +17569,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17243,10 +17648,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17319,10 +17727,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17395,10 +17806,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17471,10 +17885,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17547,10 +17964,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17623,10 +18043,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17699,10 +18122,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17775,10 +18201,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17851,10 +18280,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -17927,10 +18359,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18003,10 +18438,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18079,10 +18517,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18155,10 +18596,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18231,10 +18675,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18307,10 +18754,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18383,10 +18833,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18459,10 +18912,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18535,10 +18991,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18611,10 +19070,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18687,10 +19149,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18763,10 +19228,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18839,10 +19307,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18915,10 +19386,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -18991,10 +19465,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19067,10 +19544,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19143,10 +19623,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19219,10 +19702,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19295,10 +19781,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19371,10 +19860,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19447,10 +19939,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19523,10 +20018,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19599,10 +20097,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19675,10 +20176,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19751,10 +20255,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19827,10 +20334,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19903,10 +20413,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -19979,10 +20492,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -20055,10 +20571,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -20131,10 +20650,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -20207,10 +20729,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -20283,10 +20808,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -20359,10 +20887,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -20435,10 +20966,13 @@
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "traits": {
+              "value": []
             },
-            "group": "brawling"
+            "attackEffects": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]

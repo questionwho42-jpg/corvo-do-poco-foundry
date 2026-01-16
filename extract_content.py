@@ -208,8 +208,9 @@ def generate_pf2e_stats(name, level=0, generated=False):
                         }
                     },
                     "bonus": {"value": stats["atk"]},
-                    "weaponType": {"value": "simple"},
-                    "group": "brawling",
+                    "traits": {"value": []},
+                    "attackEffects": {"value": []},
+                    "rules": [],
                 },
             }
         )
@@ -333,15 +334,15 @@ def parse_full_stat_block_md(text):
                         "name": name,
                         "type": "melee",
                         "system": {
-                            "bonus": {"value": bonus},
                             "damageRolls": {
                                 "0": {
                                     "damage": dmg_str,
                                     "damageType": "untyped",  # Placeholder, ideally parse/prompt user
                                 }
                             },
-                            "weaponType": {"value": "melee"},
+                            "bonus": {"value": bonus},
                             "traits": {"value": []},
+                            "attackEffects": {"value": []},
                             "rules": [],
                         },
                     }
