@@ -41,19 +41,27 @@ async function migrateContent() {
     }
 
     if (!actor) {
-      actor = await Actor.create({
-        name: actorData.name,
-        type: "npc",
-        folder: parentFolder.id,
-        img: "icons/svg/mystery-man.svg", // Placeholder, will be replaced by image mapping later if exists
-        system: actorData.system,
-        // Store prompt in flags for future generation
-        flags: {
-          "corvo-do-poco": {
-            img_prompt: actorData.img_prompt,
+      try {
+        actor = await Actor.create({
+          name: actorData.name,
+          type: "npc",
+          folder: parentFolder.id,
+          img: "icons/svg/mystery-man.svg", // Placeholder, will be replaced by image mapping later if exists
+          system: actorData.system,
+          // Store prompt in flags for future generation
+          flags: {
+            "corvo-do-poco": {
+              img_prompt: actorData.img_prompt,
+            },
           },
-        },
-      });
+        });
+      } catch (err) {
+        console.error(
+          `Corvo do Poço | ERRO ao criar ator ${actorData.name}:`,
+          err,
+        );
+        continue;
+      }
     }
 
     // Embed Items (Strikes, Actions)
@@ -62,7 +70,14 @@ async function migrateContent() {
       // await actor.deleteEmbeddedDocuments("Item", actor.items.map(i => i.id));
 
       // Add new items
-      await actor.createEmbeddedDocuments("Item", actorData.items);
+      try {
+        await actor.createEmbeddedDocuments("Item", actorData.items);
+      } catch (err) {
+        console.error(
+          `Corvo do Poço | ERRO ao criar itens para ${actorData.name}:`,
+          err,
+        );
+      }
     }
   }
 

@@ -329,7 +329,22 @@ def parse_full_stat_block_md(text):
                 bonus = int(m_atk.group(2))
                 dmg_str = m_atk.group(3).strip()
                 extracted["strikes"].append(
-                    {"name": name, "type": "melee", "bonus": bonus, "damage": dmg_str}
+                    {
+                        "name": name,
+                        "type": "melee",
+                        "system": {
+                            "bonus": {"value": bonus},
+                            "damageRolls": {
+                                "0": {
+                                    "damage": dmg_str,
+                                    "damageType": "untyped",  # Placeholder, ideally parse/prompt user
+                                }
+                            },
+                            "weaponType": {"value": "melee"},
+                            "traits": {"value": []},
+                            "rules": [],
+                        },
+                    }
                 )
 
     return extracted
@@ -352,25 +367,7 @@ def populate_actor_from_extracted(extracted_stats, base_system):
         base_system["abilities"] = base_system.get("abilities", {})
         base_system["abilities"][attr] = {"mod": val}
 
-    items = []
-    for strike in extracted_stats["strikes"]:
-        # Naive strict parsing
-        dmg_parts = strike["damage"].split(" ")
-        dice = dmg_parts[0] if len(dmg_parts) > 0 else "1d4"
-        dtype = dmg_parts[1] if len(dmg_parts) > 1 else "bludgeoning"
-
-        items.append(
-            {
-                "name": strike["name"],
-                "type": "melee",
-                "system": {
-                    "damageRolls": {"0": {"damage": dice, "damageType": dtype}},
-                    "bonus": {"value": strike["bonus"]},
-                    "weaponType": {"value": "simple"},
-                    "group": "sword",  # generic
-                },
-            }
-        )
+    items = extracted_stats["strikes"]
     return base_system, items
 
 

@@ -972,38 +972,44 @@
           "name": "Battle Axe",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8+8",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 11
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8+8 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Composite Shortbow",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -1068,19 +1074,22 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6-1",
-                "damageType": "cortante,"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6-1 cortante, 1d4 espírito",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -1145,38 +1154,44 @@
           "name": "Dogslicer",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Shortbow",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -1241,19 +1256,22 @@
           "name": "Mordida",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8",
-                "damageType": "perfurante,"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8 perfurante, 1d6 veneno",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -1318,19 +1336,22 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+5",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+5 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -1395,19 +1416,22 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+5",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+5 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -1529,38 +1553,44 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+3",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+3 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+3",
-                "damageType": "cortante,"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+3 cortante, 1d4 sangramento",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -1625,19 +1655,22 @@
           "name": "Ferrão",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d12+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 12
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d12+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -1760,57 +1793,66 @@
           "name": "Espada Longa",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8+4",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8+4 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+4",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+4 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Lança",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -1875,38 +1917,44 @@
           "name": "Espada Curta",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+2",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 8
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+2 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Lança",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+2",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+2 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -1971,19 +2019,22 @@
           "name": "Face do Cubo",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6",
-                "damageType": "ácido"
-              }
-            },
             "bonus": {
               "value": 11
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6 ácido",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -2048,38 +2099,44 @@
           "name": "Espada Curta",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Besta de Mão",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -2144,38 +2201,44 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d10+8",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 11
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d10+8 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Vômito Digestivo (Digestive Spew)",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6",
-                "damageType": "ácido,"
-              }
-            },
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6 ácido, 1d6 ácido",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -2240,38 +2303,44 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8+4",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8+4 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Ferrão",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -2336,19 +2405,22 @@
           "name": "Cajado",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4+2",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4+2 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -2413,19 +2485,22 @@
           "name": "Mandibles",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4-1",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 6
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4-1 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -2490,38 +2565,44 @@
           "name": "Mandibles",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8+4",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8+4 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Ferrão",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -2586,57 +2667,66 @@
           "name": "Bastard Sword",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Punho",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4+4",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4+4 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Javelin",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 8
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -2701,38 +2791,44 @@
           "name": "Shortsword",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6-3",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 8
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6-3 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Shortbow",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 8
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -2854,19 +2950,22 @@
           "name": "Branch",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d12+2",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 12
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d12+2 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -2931,76 +3030,88 @@
           "name": "Greataxe",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d10+6",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 11
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d10+6 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+6",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 11
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+6 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4+6",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 11
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4+6 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Javelin",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 8
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -3065,57 +3176,66 @@
           "name": "Baton",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Dagger",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Dagger",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -3180,19 +3300,22 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6-1",
-                "damageType": "cortante,"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6-1 cortante, 1d4 espírito",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -3257,38 +3380,44 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+3",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+3 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Unha",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+3",
-                "damageType": "cortante,"
-              }
-            },
             "bonus": {
               "value": 9
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+3 cortante, 1d4 sangramento",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -3353,38 +3482,44 @@
           "name": "Shortsword",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Hand Crossbow",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -3449,19 +3584,22 @@
           "name": "Arm",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+3",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 11
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+3 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -3526,57 +3664,66 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4+6",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 12
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4+6 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Dagger",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4+6",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 12
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4+6 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Dagger",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4+6",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 10
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4+6 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -3641,19 +3788,22 @@
           "name": "Tentacles",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8+1",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 7
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8+1 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -3775,38 +3925,44 @@
           "name": "Mandibles",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d10+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 8
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d10+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Cauda",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4+2",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 8
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4+2 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -3871,19 +4027,22 @@
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+1",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 8
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+1 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -3948,57 +4107,66 @@
           "name": "Spear",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+1",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 3
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+1 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Spear",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+1",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 5
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+1 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Sling",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 5
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -4292,19 +4460,22 @@
           "name": "Pseudópode",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+4",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+4 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -4369,19 +4540,22 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+7",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 13
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+7 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -4504,38 +4678,44 @@
           "name": "Greataxe",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d12+8",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d12+8 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Chifre",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8+8",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8+8 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -4600,57 +4780,66 @@
           "name": "Bico",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Unha",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Asa",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+4",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+4 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -4715,38 +4904,44 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+3",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 13
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+3 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+3",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 13
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+3 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -4811,19 +5006,22 @@
           "name": "Punho",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+8",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 16
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+8 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -4888,38 +5086,44 @@
           "name": "Unha",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+4",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 15
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+4 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+4",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 15
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+4 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -4984,38 +5188,44 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d10+5",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d10+5 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+5",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+5 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -5138,38 +5348,44 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+5",
-                "damageType": "perfurante,"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+5 perfurante, 1d4 sangramento",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Cuspe (Spittle)",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "4d6",
-                "damageType": "ácido"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "4d6 ácido",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -5234,38 +5450,44 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d10+7",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d10+7 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Cauda",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+7",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+7 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -5330,19 +5552,22 @@
           "name": "Mandibles",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4-1",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 6
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4-1 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -5407,38 +5632,44 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d10+7",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d10+7 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Cauda",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+7",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 14
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+7 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -5503,19 +5734,22 @@
           "name": "Telekinetic Object",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d12",
-                "damageType": "sem"
-              }
-            },
             "bonus": {
               "value": 13
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d12 sem tipo",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -5694,19 +5928,22 @@
           "name": "Presas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+7",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 16
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+7 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -5771,19 +6008,22 @@
           "name": "Punho",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d10+7",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 16
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d10+7 contundente mais Podridão da Múmia",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -5848,38 +6088,44 @@
           "name": "Glaive",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8+10",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 17
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8+10 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Arco Curto Composto",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+8",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 15
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+8 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -5944,38 +6190,44 @@
           "name": "Halberd",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d10+9",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 18
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d10+9 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Punho",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d8+9",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 16
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d8+9 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -6040,19 +6292,22 @@
           "name": "Presas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+7",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 16
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+7 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -6117,57 +6372,66 @@
           "name": "Shortsword",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+8",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 18
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+8 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Snake Fangs",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d4+8",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 16
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d4+8 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Composite Shortbow",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "1d6+7",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 19
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "1d6+7 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -6232,38 +6496,44 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+6",
-                "damageType": "perfurante,"
-              }
-            },
             "bonus": {
               "value": 20
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+6 perfurante, 2d6 ácido",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Cuspe Ácido (Acid Spit)",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "5d6",
-                "damageType": "ácido"
-              }
-            },
             "bonus": {
               "value": 17
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "5d6 ácido",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -6328,76 +6598,88 @@
           "name": "Mandíbulas de Dragão",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+9",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 20
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+9 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Mandíbulas de Leão",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d10+9",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 20
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d10+9 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Chifres de Cabra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d10+9",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 20
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d10+9 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+9",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 20
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+9 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -6462,57 +6744,66 @@
           "name": "Branch",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d12+7",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 19
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d12+7 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Root",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+7",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 19
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+7 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Rock",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d10+7",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 19
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d10+7 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -6577,57 +6868,66 @@
           "name": "Greatclub",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d10+12",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 21
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d10+12 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Punho",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+14",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 20
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+14 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Rock",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+12",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 18
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+12 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -6692,38 +6992,44 @@
           "name": "Warhammer",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+11",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 20
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+11 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Punho",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+9",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 17
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+9 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -6845,38 +7151,44 @@
           "name": "Binding Contract",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "3d6+11",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 23
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "3d6+11 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Chifre",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "3d10+11",
-                "damageType": "perfurante"
-              }
-            },
             "bonus": {
               "value": 21
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "3d10+11 perfurante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -6941,57 +7253,66 @@
           "name": "Frost Greatsword",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d12+10",
-                "damageType": "cortante,"
-              }
-            },
             "bonus": {
               "value": 24
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d12+10 cortante, 1d6 frio",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Frost Fist",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d6+10",
-                "damageType": "contundente,"
-              }
-            },
             "bonus": {
               "value": 24
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d6+10 contundente, 1d6 frio",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Frost Composite Longbow",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d8+6",
-                "damageType": "perfurante,"
-              }
-            },
             "bonus": {
               "value": 21
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d8+6 perfurante, 1d6 frio",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -7056,19 +7377,22 @@
           "name": "Mão",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "4d8",
-                "damageType": "vazio"
-              }
-            },
             "bonus": {
               "value": 24
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "4d8 vazio",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -7133,38 +7457,44 @@
           "name": "Spiked Chain",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "3d8+18",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 27
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "3d8+18 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Punho",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "3d8+18",
-                "damageType": "contundente"
-              }
-            },
             "bonus": {
               "value": 26
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "3d8+18 contundente",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -7229,76 +7559,88 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "3d12+15",
-                "damageType": "perfurante,"
-              }
-            },
             "bonus": {
               "value": 29
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "3d12+15 perfurante, 2d6 fogo",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "3d10+15",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 29
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "3d10+15 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Cauda",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "3d12+13",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 27
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "3d12+13 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Asa",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "2d10+13",
-                "damageType": "cortante"
-              }
-            },
             "bonus": {
               "value": 27
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "2d10+13 cortante",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -7363,38 +7705,44 @@
           "name": "Mandíbulas",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "3d10+12",
-                "damageType": "perfurante,"
-              }
-            },
             "bonus": {
               "value": 33
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "3d10+12 perfurante, 2d6 frio",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         },
         {
           "name": "Garra",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "3d8+12",
-                "damageType": "cortante,"
-              }
-            },
             "bonus": {
               "value": 33
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "3d8+12 cortante, 2d6 frio",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
@@ -7459,19 +7807,22 @@
           "name": "Hand",
           "type": "melee",
           "system": {
-            "damageRolls": {
-              "0": {
-                "damage": "4d10+14",
-                "damageType": "vazio"
-              }
-            },
             "bonus": {
               "value": 32
             },
-            "weaponType": {
-              "value": "simple"
+            "damageRolls": {
+              "0": {
+                "damage": "4d10+14 vazio",
+                "damageType": "untyped"
+              }
             },
-            "group": "sword"
+            "weaponType": {
+              "value": "melee"
+            },
+            "traits": {
+              "value": []
+            },
+            "rules": []
           }
         }
       ]
