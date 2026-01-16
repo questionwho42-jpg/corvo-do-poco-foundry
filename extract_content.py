@@ -176,20 +176,39 @@ def generate_pf2e_stats(name, level=0, generated=False):
     system = {
         "details": {
             "level": {"value": level},
-            "publication": {"title": "Corvo do Poço", "authors": "Antigravity"},
+            "publication": {
+                "title": "Corvo do Poço",
+                "authors": "Antigravity",
+                "license": "OGL",
+                "remaster": True,
+            },
+            "publicNotes": "",
+            "privateNotes": "",
         },
         "attributes": {
-            "hp": {"value": stats["hp"], "max": stats["hp"], "temp": 0},
-            "ac": {"value": stats["ac"]},
-            "perception": {"value": stats["per"]},
-            "speed": {"value": 25, "label": "25 feet"},
+            "hp": {"value": stats["hp"], "max": stats["hp"], "details": ""},
+            "ac": {"value": stats["ac"], "details": ""},
+            "speed": {"value": 25, "otherSpeeds": []},
+            "allSaves": {"value": ""},
         },
+        "abilities": {
+            "str": {"mod": 3},  # Defaults to simulate a threat
+            "dex": {"mod": 3},
+            "con": {"mod": 3},
+            "int": {"mod": 0},
+            "wis": {"mod": 0},
+            "cha": {"mod": 0},
+        },
+        "perception": {
+            "value": stats["per"],
+            "mod": stats["per"],
+        },  # NPC perception often uses mod value directly
         "saves": {
-            "fortitude": {"value": stats["save_high"]},
-            "reflex": {"value": stats["save_low"]},
-            "will": {"value": stats["save_low"]},
+            "fortitude": {"value": stats["save_high"], "saveDetail": ""},
+            "reflex": {"value": stats["save_low"], "saveDetail": ""},
+            "will": {"value": stats["save_low"], "saveDetail": ""},
         },
-        "traits": {"size": {"value": "med"}, "rarity": "common"},
+        "traits": {"size": {"value": "med"}, "rarity": "common", "value": []},
     }
 
     items = []
@@ -200,6 +219,7 @@ def generate_pf2e_stats(name, level=0, generated=False):
             {
                 "name": "Ataque Básico",
                 "type": "melee",
+                "img": "icons/weapons/swords/sword-short-iron.webp",
                 "system": {
                     "damageRolls": {
                         "0": {
@@ -284,7 +304,12 @@ def parse_full_stat_block_md(text):
             for save in ["Fort", "Ref", "Will", "Vont"]:
                 m_save = re.search(rf"\*\*{save}\*\*.*?\+(\d+)", line)
                 if m_save:
-                    key = "will" if save in ["Will", "Vont"] else save.lower()
+                    if save == "Fort":
+                        key = "fortitude"
+                    elif save == "Ref":
+                        key = "reflex"
+                    else:
+                        key = "will"
                     extracted["saves"][key] = int(m_save.group(1))
 
         # HP
@@ -356,16 +381,15 @@ def populate_actor_from_extracted(extracted_stats, base_system):
     if extracted_stats["ac"]:
         base_system["attributes"]["ac"]["value"] = extracted_stats["ac"]
     if extracted_stats["hp"]:
-        base_system["attributes"]["hp"] = {
-            "value": extracted_stats["hp"],
-            "max": extracted_stats["hp"],
-        }
+        base_system["attributes"]["hp"]["value"] = extracted_stats["hp"]
+        base_system["attributes"]["hp"]["max"] = extracted_stats["hp"]
 
     for save, val in extracted_stats["saves"].items():
-        base_system["saves"][save] = {"value": val}
+        base_system["saves"][save]["value"] = val
 
     for attr, val in extracted_stats["attribs"].items():
-        base_system["abilities"] = base_system.get("abilities", {})
+        if "abilities" not in base_system:
+            base_system["abilities"] = {}
         base_system["abilities"][attr] = {"mod": val}
 
     items = extracted_stats["strikes"]
@@ -434,7 +458,8 @@ def parse_actors(filepath, category):
         if is_social:
             social = parse_social_stats(body)
             if social["per"]:
-                system["attributes"]["perception"]["value"] = social["per"]
+                system["perception"]["value"] = social["per"]
+                system["perception"]["mod"] = social["per"]
             if social["will"]:
                 system["saves"]["will"]["value"] = social["will"]
             # Skills would need item mapping, simpler to put in flags or raw data for now,
