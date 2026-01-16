@@ -1,0 +1,88 @@
+{
+  "id": "corvo-do-poco",
+  "title": "Corvo do Poço",
+  "description": "Uma campanha completa e automatizada para Pathfinder 2e no Foundry VTT.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Antigravity",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "esmodules": ["scripts/main.js"],
+  "styles": ["styles/main.css"],
+  "packs": [
+    {
+      "name": "corvo-do-poco-actors",
+      "label": "Corvo do Poço - Atores",
+      "path": "packs/actors",
+      "type": "Actor",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "corvo-do-poco-items",
+      "label": "Corvo do Poço - Itens",
+      "path": "packs/items",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "corvo-do-poco-journals",
+      "label": "Corvo do Poço - Diários",
+      "path": "packs/journals",
+      "type": "JournalEntry",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "corvo-do-poco-scenes",
+      "label": "Corvo do Poço - Cenas",
+      "path": "packs/scenes",
+      "type": "Scene",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "corvo-do-poco-macros",
+      "label": "Corvo do Poço - Macros",
+      "path": "packs/macros",
+      "type": "Macro",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "url": "",
+  "manifest": "",
+  "download": ""
+}

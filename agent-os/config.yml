@@ -1,0 +1,7 @@
+agent_os_commands: false
+claude_code_commands: true
+last_compiled: '2026-01-16 17:37:21'
+profile: default
+standards_as_claude_code_skills: false
+use_claude_code_subagents: true
+version: 2.1.1
