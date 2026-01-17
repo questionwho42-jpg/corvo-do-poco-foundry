@@ -194,20 +194,24 @@ def generate_pf2e_stats(name, level=0, generated=False):
                 "value": 25,
                 "otherSpeeds": [],
                 "details": "",
-            },  # 'details' required by NPC schema
+            },
             "allSaves": {"value": ""},
+            "immunities": [],  # Required
+            "weaknesses": [],  # Required
+            "resistances": [],  # Required
+            "adjustment": None,  # Required
         },
         "resources": {
             "focus": {"value": 0, "max": 0},
         },
-        "initiative": {"statistic": "perception"},  # Required by V13
+        "initiative": {"statistic": "perception"},
         "abilities": {
-            "str": {"mod": 3},  # Defaults to simulate a threat
-            "dex": {"mod": 3},
-            "con": {"mod": 3},
-            "int": {"mod": 0},
-            "wis": {"mod": 0},
-            "cha": {"mod": 0},
+            "str": {"mod": 3, "label": "Strength", "shortLabel": "Str"},
+            "dex": {"mod": 3, "label": "Dexterity", "shortLabel": "Dex"},
+            "con": {"mod": 3, "label": "Constitution", "shortLabel": "Con"},
+            "int": {"mod": 0, "label": "Intelligence", "shortLabel": "Int"},
+            "wis": {"mod": 0, "label": "Wisdom", "shortLabel": "Wis"},
+            "cha": {"mod": 0, "label": "Charisma", "shortLabel": "Cha"},
         },
         "perception": {
             "mod": stats["per"],
@@ -401,8 +405,10 @@ def populate_actor_from_extracted(extracted_stats, base_system):
 
     for attr, val in extracted_stats["attribs"].items():
         if "abilities" not in base_system:
-            base_system["abilities"] = {}
-        base_system["abilities"][attr] = {"mod": val}
+            # Should be there from generate_pf2e_stats
+            pass
+        # Only update mod, keep labels
+        base_system["abilities"][attr]["mod"] = val
 
     items = extracted_stats["strikes"]
     return base_system, items
