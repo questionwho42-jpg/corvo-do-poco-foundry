@@ -374,6 +374,42 @@ def parse_full_stat_block_md(text):
                 name = m_atk.group(1).strip()
                 bonus = int(m_atk.group(2))
                 dmg_str = m_atk.group(3).strip()
+                # Parse Damage: "1d6+4 perfurante" -> formula="1d6+4", type="piercing"
+                damage_data = dmg_str.strip()
+                # Regex to capture formula (e.g., 1d6+4, 2d10, 1d8 + 2) and the rest
+                m_dmg = re.match(r"^(\d+d\d+(?:\s*[+\-]\s*\d+)?)\s*(.*)$", damage_data)
+
+                final_formula = damage_data
+                final_type = "untyped"
+
+                if m_dmg:
+                    final_formula = m_dmg.group(1).strip()
+                    raw_type = m_dmg.group(2).strip().lower()
+
+                    # Basic mapping
+                    type_map = {
+                        "perfurante": "piercing",
+                        "cortante": "slashing",
+                        "contundente": "bludgeoning",
+                        "ácido": "acid",
+                        "frio": "cold",
+                        "eletricidade": "electricity",
+                        "fogo": "fire",
+                        "mental": "mental",
+                        "veneno": "poison",
+                        "sônico": "sonic",
+                        "espírito": "spirit",
+                        "vitalidade": "vitality",
+                        "vazio": "void",
+                        "força": "force",
+                    }
+
+                    # Try to match whole word
+                    for pt, en in type_map.items():
+                        if pt in raw_type:
+                            final_type = en
+                            break
+
                 extracted["strikes"].append(
                     {
                         "name": name,
@@ -381,8 +417,8 @@ def parse_full_stat_block_md(text):
                         "system": {
                             "damageRolls": {
                                 "0": {
-                                    "damage": dmg_str,
-                                    "damageType": "untyped",  # Placeholder, ideally parse/prompt user
+                                    "damage": final_formula,
+                                    "damageType": final_type,
                                 }
                             },
                             "bonus": {"value": bonus},
