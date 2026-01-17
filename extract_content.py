@@ -174,6 +174,10 @@ def generate_pf2e_stats(name, level=0, generated=False):
     stats = PF2E_STATS.get(level, PF2E_STATS[0])
 
     system = {
+        "_migration": {
+            "version": None,
+            "previous": None,
+        },
         "details": {
             "level": {"value": level},
             "languages": {"value": [], "details": ""},  # Required by V13

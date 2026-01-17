@@ -3,7 +3,7 @@
 
 async function migrateContent() {
   const response = await fetch(
-    "modules/corvo-do-poco/scripts/data/content_bundle.json",
+    `modules/corvo-do-poco/scripts/data/content_bundle.json?ts=${Date.now()}`,
   );
   if (!response.ok) {
     ui.notifications.error(
@@ -42,13 +42,40 @@ async function migrateContent() {
 
     if (!actor) {
       try {
+        // --- V13 DIAGNOSTIC & FIX ---
+        // 1. Inject _migration if missing (Required in V13)
+        if (!actorData.system._migration) {
+          actorData.system._migration = { version: null, previous: null };
+        }
+
+        // 2. Validate Data BEFORE Create
+        const ActorCls = getDocumentClass("Actor");
+        // Construct a temporary instance to validate
+        const tempActor = new ActorCls({
+          name: actorData.name,
+          type: "npc",
+          system: actorData.system,
+        });
+
+        try {
+          tempActor.validate();
+        } catch (validationErr) {
+          console.error(
+            `Corvo do Poço | VALIDATION ERROR for ${actorData.name}:`,
+            validationErr,
+          );
+          ui.notifications.error(
+            `Validation failed for ${actorData.name}. See console.`,
+          );
+          // We continue anyway to see if Foundry sanitizes it, but now we know WHY.
+        }
+
         actor = await Actor.create({
           name: actorData.name,
           type: "npc",
           folder: parentFolder.id,
-          img: "icons/svg/mystery-man.svg", // Placeholder, will be replaced by image mapping later if exists
+          img: "icons/svg/mystery-man.svg",
           system: actorData.system,
-          // Store prompt in flags for future generation
           flags: {
             "corvo-do-poco": {
               img_prompt: actorData.img_prompt,
