@@ -176,6 +176,7 @@ def generate_pf2e_stats(name, level=0, generated=False):
     system = {
         "details": {
             "level": {"value": level},
+            "languages": {"value": [], "details": ""},  # Required by V13
             "publication": {
                 "title": "Corvo do Poço",
                 "authors": "Antigravity",
@@ -184,13 +185,19 @@ def generate_pf2e_stats(name, level=0, generated=False):
             },
             "publicNotes": "",
             "privateNotes": "",
+            "blurb": "",  # Required by V13
         },
         "attributes": {
             "hp": {"value": stats["hp"], "max": stats["hp"], "details": ""},
             "ac": {"value": stats["ac"], "details": ""},
-            "speed": {"value": 25, "otherSpeeds": []},
+            "speed": {
+                "value": 25,
+                "otherSpeeds": [],
+                "details": "",
+            },  # 'details' required by NPC schema
             "allSaves": {"value": ""},
         },
+        "initiative": {"statistic": "perception"},  # Required by V13
         "abilities": {
             "str": {"mod": 3},  # Defaults to simulate a threat
             "dex": {"mod": 3},
@@ -200,9 +207,11 @@ def generate_pf2e_stats(name, level=0, generated=False):
             "cha": {"mod": 0},
         },
         "perception": {
-            "value": stats["per"],
             "mod": stats["per"],
-        },  # NPC perception often uses mod value directly
+            "senses": [],
+            "vision": True,
+            "details": "",
+        },
         "saves": {
             "fortitude": {"value": stats["save_high"], "saveDetail": ""},
             "reflex": {"value": stats["save_low"], "saveDetail": ""},
@@ -458,7 +467,6 @@ def parse_actors(filepath, category):
         if is_social:
             social = parse_social_stats(body)
             if social["per"]:
-                system["perception"]["value"] = social["per"]
                 system["perception"]["mod"] = social["per"]
             if social["will"]:
                 system["saves"]["will"]["value"] = social["will"]
