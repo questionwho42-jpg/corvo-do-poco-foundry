@@ -188,7 +188,7 @@ def generate_pf2e_stats(name, level=0, generated=False):
             "blurb": "",  # Required by V13
         },
         "attributes": {
-            "hp": {"value": stats["hp"], "max": stats["hp"], "details": ""},
+            "hp": {"value": stats["hp"], "max": stats["hp"], "temp": 0, "details": ""},
             "ac": {"value": stats["ac"], "details": ""},
             "speed": {
                 "value": 25,
@@ -196,6 +196,9 @@ def generate_pf2e_stats(name, level=0, generated=False):
                 "details": "",
             },  # 'details' required by NPC schema
             "allSaves": {"value": ""},
+        },
+        "resources": {
+            "focus": {"value": 0, "max": 0},
         },
         "initiative": {"statistic": "perception"},  # Required by V13
         "abilities": {
